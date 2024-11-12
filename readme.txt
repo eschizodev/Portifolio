@@ -2,7 +2,7 @@
 
 DESCRIPTION:
 
-HUDSON is a simple and modern free personal website template designed for creatives and 
+Pedro is a simple and modern free personal website template designed for creatives and 
 professionals who want to showcase their skills and work in an eye-catching way. Its simple yet 
 sophisticated design is perfect for anyone who wants to create a polished and professional online 
 presence without spending a lot of time or money on web development.
@@ -69,7 +69,7 @@ Also, keep your Paypal receipt as proof of payment and your good to go.
 
 SUPPORT:
     
-Since HUDSON is distributed for free, support is not offered. HUDSON is coded according 
+Since Pedro is distributed for free, support is not offered. Pedro is coded according 
 to current web standards and we did our best to make the template easy to use and modify.
 If you have minimum web development experience, you can easily modify the template. 
 However, If you're still new to HTML and CSS, I suggest that you visit the 

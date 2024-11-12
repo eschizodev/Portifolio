@@ -1,5 +1,5 @@
 /* ===================================================================
- * Hudson Third-party Stylesheets
+ * Pedro Third-party Stylesheets
  * Template Ver. 1.0.0
  * 04-03-2023
  * -------------------------------------------------------------------
@@ -368,11 +368,7 @@ pre[class*=language-] {
     display: none;
 }
 
-:root {
-    /*
-    --swiper-pagination-color: var(--swiper-theme-color);
-    */
-}
+
 
 .swiper-pagination {
     position  : absolute;
@@ -551,7 +547,6 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
     border-radius   : 10px;
     position        : relative;
-    -ms-touch-action: none;
     background      : rgba(0, 0, 0, 0.1);
 }
 
@@ -613,12 +608,7 @@ button.swiper-pagination-bullet {
     cursor: move;
 }
 
-/* Preloader */
-:root {
-    /*
-    --swiper-preloader-color: var(--swiper-theme-color);
-    */
-}
+
 
 .swiper-lazy-preloader {
     width           : 42px;
