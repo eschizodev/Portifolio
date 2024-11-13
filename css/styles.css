@@ -80,8 +80,7 @@
     --font-1: "Public Sans", Sans-serif;
     --font-2: "Castoro", Serif;
 
-  /* monospace
-   */
+ 
     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
@@ -90,10 +89,7 @@
  * ------------------------------------------------------------------- */
 :root {
 
-  /* color-1(#C73E1D)
-   * color-2(#2F352B)
-   * color-3(#1A1A1A)
-   */
+ 
     --color-1: hsla(12, 75%, 45%, 1);
     --color-2: hsla(96, 10%, 19%, 1);
     --color-3: hsla(0, 0%, 10%, 1);
@@ -2751,7 +2747,7 @@ td:last-child {
 }
 
 .section-header.light-on-dark::before {
-    color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0);
 }
 
 /* ------------------------------------------------------------------- 
