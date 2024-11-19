@@ -3017,7 +3017,7 @@ td:last-child {
     align-items     : center;
     justify-content : space-between;
     background-color: var(--color-3);
-    border          : 1px solid rgba(255, 255, 255, 0.03);
+    border          : 1px solid rgba(0, 0, 0, 0.03);
     padding         : 0 var(--gutter);
     box-shadow      : var(--box-shadow);
 }

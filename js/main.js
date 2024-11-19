@@ -1,15 +1,13 @@
-/* ===================================================================
- * Pedro 1.0.0 - Main JS
- *
- * ------------------------------------------------------------------- */
+/* 
+ * Pedro main js
+ */
 
 (function(html) {
 
     'use strict';
 
 
-   /* preloader
-    * -------------------------------------------------- */
+ 
     const ssPreloader = function() {
 
         const siteBody = document.querySelector('body');
@@ -31,11 +29,10 @@
             });
         });
 
-    }; // end ssPreloader
+    }; 
 
 
-   /* move header
-    * -------------------------------------------------- */
+  
     const ssMoveHeader = function () {
 
         const hdr = document.querySelector('.s-header');
@@ -72,11 +69,10 @@
 
         });
 
-    }; // end ssMoveHeader
+    }; 
 
 
-   /* mobile menu
-    * ---------------------------------------------------- */ 
+  
     const ssMobileMenu = function() {
 
         const toggleButton = document.querySelector('.s-header__menu-toggle');
@@ -105,44 +101,37 @@
 
         window.addEventListener('resize', function() {
 
-            // above 900px
+           
             if (window.matchMedia('(min-width: 901px)').matches) {
                 if (siteBody.classList.contains('menu-is-open')) siteBody.classList.remove('menu-is-open');
                 if (toggleButton.classList.contains('is-clicked')) toggleButton.classList.remove('is-clicked');
             }
         });
 
-    }; // end ssMobileMenu
+    }; 
 
 
-   /* highlight active menu link on pagescroll
-    * ------------------------------------------------------ */
+   
     const ssScrollSpy = function() {
 
         const sections = document.querySelectorAll('.target-section');
         if (!sections) return;
 
-        // Add an event listener listening for scroll
+       
         window.addEventListener('scroll', navHighlight);
 
         function navHighlight() {
         
-            // Get current scroll position
+            
             let scrollY = window.pageYOffset;
         
-            // Loop through sections to get height(including padding and border), 
-            // top and ID values for each
+          
             sections.forEach(function(current) {
                 const sectionHeight = current.offsetHeight;
                 const sectionTop = current.offsetTop - 50;
                 const sectionId = current.getAttribute('id');
             
-               /* If our current scroll position enters the space where current section 
-                * on screen is, add .current class to parent element(li) of the thecorresponding 
-                * navigation link, else remove it. To know which link is active, we use 
-                * sectionId variable we are getting while looping through sections as 
-                * an selector
-                */
+               
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                     document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.add('current');
                 } else {
@@ -151,11 +140,9 @@
             });
         }
 
-    }; // end ssScrollSpy
+    }; 
 
 
-   /* glightbox
-    * ------------------------------------------------------ */ 
     const ssGLightbox = function() {
 
         const lightbox = GLightbox({
@@ -171,11 +158,10 @@
             }
         });        
 
-    } // end ssGLightbox
+    } 
+    
 
 
-   /* swiper
-    * ------------------------------------------------------ */ 
     const ssSwiper = function() {
 
         const testimonialsSwiper = new Swiper('.s-testimonials__slider', {
@@ -186,17 +172,17 @@
                 clickable: true,
             },
             breakpoints: {
-                // when window width is > 400px
+                
                 401: {
                     slidesPerView: 1,
                     spaceBetween: 20
                 },
-                // when window width is > 800px
+               
                 801: {
                     slidesPerView: 2,
                     spaceBetween: 50
                 },
-                // when window width is > 1180px
+                
                 1181: {
                     slidesPerView: 3,
                     spaceBetween: 48
@@ -204,11 +190,9 @@
             }
         });
 
-    }; // end ssSwiper
+    }; 
 
 
-   /* alert boxes
-    * ------------------------------------------------------ */
     const ssAlertBoxes = function() {
 
         const boxes = document.querySelectorAll('.alert-box');
@@ -227,11 +211,10 @@
             });
         })
 
-    }; // end ssAlertBoxes
+    }; 
 
 
-    /* Back to Top
-    * ------------------------------------------------------ */
+
     const ssBackToTop = function() {
 
         const pxShow = 900;
@@ -250,11 +233,11 @@
             }
         });
 
-    }; // end ssBackToTop
+    };
 
 
-   /* smoothscroll
-    * ------------------------------------------------------ */
+
+
     const ssMoveTo = function() {
 
         const easeFunctions = {
@@ -293,11 +276,11 @@
             moveTo.registerTrigger(trigger);
         });
 
-    }; // end ssMoveTo
+    }; 
 
 
-   /* Initialize
-    * ------------------------------------------------------ */
+
+
     (function ssInit() {
 
         ssPreloader();
