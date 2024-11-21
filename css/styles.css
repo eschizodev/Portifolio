@@ -562,7 +562,7 @@ table {
 }
 
 /* ------------------------- -------------------------------------------
- * ## extra large devices (1201px and above)
+ * ## dispositivos extra grandes (1201px and above)
  * -------------------------------------------------------------------- */
 .xl-1 {
     flex : none;
@@ -625,7 +625,7 @@ table {
 }
 
 /* --------------------------------------------------------------------
- * ## large devices (1001px to 1200px)
+ * ## despositivos grandes (1001px to 1200px)
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
     .lg-1 {
@@ -690,7 +690,7 @@ table {
 }
 
 /* --------------------------------------------------------------------
- * ## medium devices (801px to 1000px)
+ * ## dispositivos medios (801px to 1000px)
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
     .md-1 {
@@ -755,7 +755,8 @@ table {
 }
 
 /* --------------------------------------------------------------------
- * ## tablet devices (601px to 800px)  
+ * ## 
+tablets (601px a 800px)
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .tab-1 {
@@ -820,7 +821,8 @@ table {
 }
 
 /* --------------------------------------------------------------------
- * ## mobile devices (401px to 600px)  
+ * ##
+dispositivos móveis (401px a 600px)
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 600px) {
     .row {
@@ -896,7 +898,8 @@ table {
 }
 
 /* --------------------------------------------------------------------
- * ## small mobile devices (up to 400px)
+ * ## 
+pequenos dispositivos móveis (até 400px)
  * -------------------------------------------------------------------- */
 
  /* stack columns vertically
@@ -917,7 +920,7 @@ table {
 }
 
 /* --------------------------------------------------------------------
- * ## additional column stackpoints 
+ * ## pontos de pilha de coluna adicionais
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
     .stack-on-900 {
@@ -991,7 +994,7 @@ pre {
     overflow: auto;
 }
 
-/* Remove margins and paddings for common elements 
+/* Remova margens e preenchimentos de elementos comuns
  */
 div,
 dl,
@@ -1016,7 +1019,7 @@ td {
     padding: 0;
 }
 
-/* Remove default styles for input elements 
+/* Remover estilos padrão para elementos de entrada
  */
 input[type=email],
 input[type=number],
@@ -1033,12 +1036,12 @@ textarea {
 
 
 /* ===================================================================
- * # UTILITY CLASSES
+ * # classe para utilidades
  *
  *
  * ------------------------------------------------------------------- */
 
-/* flex item alignment classes
+/* flex item alinhamento 
  */
 .u-flexitem-center {
     margin    : auto;
@@ -1080,8 +1083,7 @@ textarea {
     align-self: flex-end;
 }
 
-/* misc helper classes
- */
+
 .u-screen-reader-text {
     clip             : rect(1px, 1px, 1px, 1px);
     -webkit-clip-path: inset(50%);
@@ -1157,33 +1159,10 @@ textarea {
 }
 
 
-/* ===================================================================
- * # TYPOGRAPHY 
- *
- *
- * ------------------------------------------------------------------- 
- * type scale - ratio 1:2 | base: 20px
- * -------------------------------------------------------------------
- *
- * --text-huge-3    = (148.60px)
- * --text-huge-2    = (123.83px)
- * --text-huge-1    = (103.20px)
- * --text-display-3 = (86.00px)
- * --text-display-2 = (71.66px)
- * --text-display-1 = (59.72px)
- * --text-xxxl      = (49.77px)
- * --text-xxl       = (41.47px)
- * --text-xl        = (34.56px)
- * --text-lg        = (28.80px)
- * --text-md        = (24.00px)
- * --text-size      = (20.00px) BASE
- * --text-sm        = (16.67px)
- * --text-xs        = (13.89px)
- *
- * -------------------------------------------------------------------- */
+
 
 /* --------------------------------------------------------------------
- * ## base type styles
+ * ## tipo de estilo base
  * -------------------------------------------------------------------- */
 body {
     font-family: var(--font-1);
@@ -1211,7 +1190,7 @@ a:active {
     outline: 0;
 }
 
-/* headings
+/* cabeçalhos
  */
 h1,
 h2,
@@ -1307,9 +1286,7 @@ h6,
     letter-spacing: 0.25rem;
 }
 
-/* emphasis, italic,
- * strong, bold and small text
- */
+
 em,
 i,
 strong,
@@ -1335,7 +1312,7 @@ small {
     line-height: var(--vspace-0_5);
 }
 
-/* blockquotes
+/* citações 
  */
 blockquote {
     margin     : 0 0 var(--vspace-1) 0;
@@ -1404,13 +1381,13 @@ figure img+figcaption {
 }
 
 figcaption {
-    /* font-style: italic; */
+    /* estilo de fonte */
     font-size    : var(--text-sm);
     text-align   : center;
     margin-bottom: 0;
 }
 
-/* preformatted, code
+/* codigo preformatado 
  */
 var,
 kbd,
@@ -1447,8 +1424,7 @@ pre>code {
     border     : none;
 }
 
-/* deleted text, abbreviation,
- * & mark text
+/* texto deletado, mascas de texto e definição
  */
 del {
     text-decoration: line-through;
@@ -1475,7 +1451,7 @@ mark {
     color     : var(--color-text);
 }
 
-/* horizontal rule
+/* regra horizontal 
  */
 hr {
     border      : solid var(--color-border);
@@ -1498,7 +1474,7 @@ hr.fancy::before {
 }
 
 /* --------------------------------------------------------------------
- * ## additional typography & helper classes
+ * ## topografia adicional 
  * -------------------------------------------------------------------- */
 .lead,
 .attention-getter {
@@ -1585,7 +1561,7 @@ hr.fancy::before {
 }
 
 /* --------------------------------------------------------------------
- * ## lists
+ * ## lista
  * -------------------------------------------------------------------- */
 ol {
     list-style: decimal;
@@ -1648,7 +1624,7 @@ dd {
     margin: 0 0 0 2rem;
 }
 
-/* definition list line style 
+/* definição de lista 2.0
  */
 .lining dt,
 .lining dd {
@@ -1675,7 +1651,7 @@ dd {
     margin-left: -0.2em;
 }
 
-/* definition list dictionary style 
+/* definição de lista
  */
 .dictionary-style dt {
     display      : inline;
