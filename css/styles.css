@@ -426,7 +426,7 @@ video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+/* Redefinição da função de exibição HTML5 para navegadores mais antigos */
 article,
 aside,
 details,
@@ -469,23 +469,7 @@ table {
 }
 
 
-/* ===================================================================
- * # GRID v5.0.0
- *
- *
- * -------------------------------------------------------------------
- * - Grid system based on the flex display property.
- *
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
- *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- *
- * - Grid columns without a specified width will automatically layout 
- *   as equal width columns.
- *
- * - On viewports 400px and below, all grid columns will stacked 
- *   vertically
- *
- * ------------------------------------------------------------------- */
+
 
 /* row 
  */
@@ -502,7 +486,7 @@ table {
     margin-right: calc(var(--gutter) * -1);
 }
 
-/* column
+/* coluna 
  */
 .column {
     flex   : 1;
