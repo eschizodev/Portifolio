@@ -294,7 +294,7 @@
  * ------------------------------------------------------------------- */
 :root {
 
-  /* widths for rows and containers
+  /* largura pra rows e containers
    */
     --width-sixteen-cols: 1760px;
     --width-default     : 1280px;
@@ -306,12 +306,11 @@
     --width-full        : 100%;
     --width-grid-max    : var(--width-default);
 
-  /* gutter
-   */
+ 
     --gutter: 2.6rem;
 }
 
-/* on large screen devices
+/* em dispositivos grandes 
  */
 @media screen and (max-width: 1000px) {
     :root {
@@ -319,7 +318,7 @@
     }
 }
 
-/* on small devices
+/* em dispositivos pequenos
  */
 @media screen and (max-width: 600px) {
     :root {
@@ -329,14 +328,7 @@
 
 
 /* ====================================================================
- * # CSS RESET
- *
- *
- * --------------------------------------------------------------------
- * http://meyerweb.com/eric/tools/css/reset/ 
- * v2.0 | 20110126
- * License: none (public domain)
- * -------------------------------------------------------------------- */
+
 html,
 body,
 div,
